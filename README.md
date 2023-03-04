@@ -8,7 +8,7 @@ Listed here are the ipynb files used, which should be viewed in numerical order:
 1. [EDA](https://github.com/edward62740/sc1015-project/blob/master/EDA.ipynb)
 2. [Data Cleaning, NLP](https://github.com/edward62740/sc1015-project/blob/master/Data%20Cleaning%2C%20Lemmatization%20and%20Feature%20Extraction.ipynb)
 3. [Support Vector Machine (SVM) model](https://github.com/edward62740/sc1015-project/blob/master/Support%20Vector%20Machine.ipynb)
-4. 
+4. [Recurrent Neural Network (RNN) model](https://github.com/edward62740/sc1015-project/blob/master/Recurrent%20Neural%20Network.ipynb)
 
 ## ML Models and Performance
 Below is the table denoting various performance statistics for the respective models on the test set (for the positive class, i.e. fraudulent)<br>
