@@ -12,11 +12,11 @@ Listed here are the ipynb files used, which should be viewed in numerical order:
 
 ## ML Models and Performance
 Below is the table denoting various performance statistics for the respective models on the test set (for the positive class, i.e. fraudulent)<br>
-| Model     | Accuracy | F1   | Recall (TPR) | Specificity (TNR) | Precision |
-|-----------|----------|------|--------------|-------------------|-----------|
-| LinearSVC | 0.988    | 0.88 | 0.815        | 0.997             | 0.95      |
-|           |          |      |              |                   |           |
-|           |          |      |              |                   |           |
+| Model               | Accuracy | F1   | Recall (TPR) | Specificity (TNR) | Precision |
+|---------------------|----------|------|--------------|-------------------|-----------|
+| LinearSVC           | 0.988    | 0.88 | 0.827        | 0.997             | 0.93      |
+| Bi-directional LSTM | 0.980    | 0.77 | 0.71         | 0.994             | 0.86      |
+|                     |          |      |              |                   |           |
 ## Contributors
 
 
