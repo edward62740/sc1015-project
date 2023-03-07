@@ -15,7 +15,7 @@ Below is the table denoting various performance statistics for the respective mo
 | Model               | Accuracy | F1   | Recall (TPR) | Specificity (TNR) | Precision |
 |---------------------|----------|------|--------------|-------------------|-----------|
 | LinearSVC           | 0.988    | 0.88 | 0.827        | 0.997             | 0.93      |
-| Bi-directional LSTM | 0.980    | 0.77 | 0.71         | 0.994             | 0.86      |
+| Bi-directional LSTM | 0.985    | 0.82 | 0.73         | 0.997             | 0.93      |
 |                     |          |      |              |                   |           |
 ## Contributors
 
