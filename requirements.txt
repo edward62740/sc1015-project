@@ -1,4 +1,4 @@
-nltk==3.7
+nltk==3.8.1
 matplotlib==3.5.2
 spacy==3.5.0
 numpy==1.21.5
