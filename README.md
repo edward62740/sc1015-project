@@ -32,12 +32,15 @@ The cleaned text was class balanced with ADASYN, encoded with one-hot encoding, 
 The results of the classification are as below.
 
 ## Results
-Below is the table denoting various performance statistics for the respective models on the **test** set (for the positive class, i.e. fraudulent)<br>
+This table denotes various performance statistics for the respective models on the **test** set (for the positive class, i.e. fraudulent)<br>
 | Model                    | Accuracy | F1   | Recall (TPR) | Specificity (TNR) | Precision |
 |--------------------------|----------|------|--------------|-------------------|-----------|
 | LinearSVC                | 0.988    | 0.88 | 0.827        | 0.997             | 0.93      |
 | Bi-directional LSTM      | 0.985    | 0.82 | 0.73         | 0.997             | 0.93      |
 | Random Forest (Baseline) | 0.978    | 0.72 | 0.57         | 0.99              | 0.92      |
+
+From some limited misclassification analysis (in SVM file), it was found that the word "experience" had an unusually high frequency in the misclassified positive samples, with most of the other words being conjunctions/fillers.
+While it is hard to draw any conclusions, it could be said that this word may be a more important feature for fraud classification.
 
 ## Conclusion
 In conclusion, we found that it is possible to classify fake job listings with relatively high accuracy (>80%), despite the highly imbalanced classes. More importantly, all the models are able to hit almost 100% accuracy with identifying real jobs, which is important as creating a model that falsely categorizes job listings as fraudulent will not be in the public interest.
