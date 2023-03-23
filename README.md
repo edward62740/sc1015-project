@@ -48,9 +48,9 @@ In conclusion, we found that it is possible to classify fake job listings with r
 Based on the successes of the ML models, we can determine that there exists a strong correlation between a real job listing and a certain pattern/word use in the job description.
 
 ## Contributors
-@edward62740 - <br>
-@tian0662 - <br>
-@iCiCici - <br>
+@edward62740 - SVM, RNN, NLP, data cleaning <br>
+@tian0662 - Random Forest, Decision Tree, EDA, Video <br>
+@iCiCici - RNN, EDA, Slides preperation, Video <br>
 
 ## References
 - https://machinelearningmastery.com/an-introduction-to-recurrent-neural-networks-and-the-math-that-powers-them/#:~:text=A%20recurrent%20neural%20network%20(RNN,are%20independent%20of%20each%20other.
@@ -62,5 +62,3 @@ Based on the successes of the ML models, we can determine that there exists a st
 - https://nlp.stanford.edu/projects/glove/
 - https://spacy.io/
 - https://pytorch.org/docs/stable/generated/torch.nn.LSTM.html
-
-## License
