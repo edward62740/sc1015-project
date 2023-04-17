@@ -24,11 +24,11 @@ The dataset contains a mix of numbers (stored as strings), boolean values and st
 - Next, there was some post-processing to further clean the data, such as normalizing case, removing hyperlinks, symbols etc.
 - The processed text was saved to a csv; model-specific vectorization/encoding are done in the following sections.
 ### [Baseline Model - Random Forest](https://github.com/edward62740/sc1015-project/blob/master/Random%20Forest.ipynb)
-The random forest model is used to demonstrate that this particular task of fake job classification requires a more complex model, as random forest yields poor results even with max depth of 32.
+The random forest model is used to demonstrate that this particular task of fake job classification requires a more complex model, as random forest yielded poor results even with max depth of 32. Two versions of the random forest models were created - one to classify based on the numerical/boolean data, and the other with the vectorized text.
 ### [Support Vector Machine (SVM) model](https://github.com/edward62740/sc1015-project/blob/master/Support%20Vector%20Machine.ipynb)
 The cleaned text was vectorized with TF-IDF, class balanced with ADASYN, and used to create a SVC. It was found that for this particular dataset, the linear kernel is most performant, with C param of 0.1. Some attempts were made to use PCA/SVD to reduce the dimensionality, but this did not work due to the very high dimension of the data. Reducing the dimension at the vectorization stage yielded worse results. Instead, zero variance features were removed.
 ### [Recurrent Neural Network (RNN) model](https://github.com/edward62740/sc1015-project/blob/master/Recurrent%20Neural%20Network.ipynb)
-The cleaned text was class balanced with ADASYN, encoded with one-hot encoding, and fed into a RNN with GloVe used as a pre-trained embedding layer. Specifically, the RNN utilizes bi-directional LSTM to help with memory in the time domain. The float [0,1] output of the RNN is then rounded to a boolean.
+The cleaned text was class balanced with ADASYN, encoded with one-hot encoding, and fed into a RNN with GloVe used as a pre-trained embedding layer. Specifically, the RNN utilizes bi-directional LSTM to help with memory in the time domain. The float [0,1] output of the RNN is then rounded to a boolean. LeakyReLU activation functions for the fully connected layers performed better than ReLU.
 The results of the classification are as below.
 
 ## Results
